@@ -1,0 +1,7 @@
+<div [class.preview]="signature">
+  @if (signature) {
+    <img [src]="signature" alt="Signature"/>
+  } @else {
+    <span>No signature data to preview</span>
+  }
+</div>

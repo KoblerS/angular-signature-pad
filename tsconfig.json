@@ -4,20 +4,33 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
+    "esModuleInterop": true,
     "declaration": false,
-    "downlevelIteration": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2015",
-    "module": "es2020",
-    "lib": ["es2018", "dom"],
+    "target": "ES2022",
+    "module": "ES2022",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
     "paths": {
       "angular-signature-pad": [
-        "dist/angular-signature-pad/angular-signature-pad",
-        "dist/angular-signature-pad"
+        "dist/angular-signature-pad",
+        "dist/"
+      ],
+      "demo": [
+        "demo"
       ]
-    }
+    },
+    "useDefineForClassFields": false
   },
-  "angularCompilerOptions": {}
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
+  }
 }

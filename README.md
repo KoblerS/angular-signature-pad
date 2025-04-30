@@ -1,22 +1,34 @@
 # Angular Signature Pad
+
+[![npm downloads](https://img.shields.io/npm/dt/@almothafar/angular-signature-pad.svg)](https://www.npmjs.com/package/@almothafar/angular-signature-pad)
+[![npm version](https://img.shields.io/npm/v/@almothafar/angular-signature-pad.svg)](https://www.npmjs.com/package/@almothafar/angular-signature-pad)
+[![npm license](https://img.shields.io/npm/l/@almothafar/angular-signature-pad.svg)](https://www.npmjs.com/package/@almothafar/angular-signature-pad)
+[![GitHub issues](https://img.shields.io/github/issues/almothafar/angular-signature-pad.svg)](https://github.com/almothafar/angular-signature-pad/issues)
+
+
 Angular component for [szimek/signature_pad](https://www.npmjs.com/package/signature_pad).
 
 ## Install
-`npm install @almothafar/angular-signature-pad --save`
+
+```shell
+npm install @almothafar/angular-signature-pad --save
+```
 
 ## Reference Implementation
 
-* [Live Demo](http://lathonez.com/angular2-signaturepad-demo/)
-* [Source](https://github.com/lathonez/angular2-signaturepad-demo)
+* [Live Demo](https://almothafar.github.io/angular-signature-pad/)
+* [Source](https://github.com/almothafar/angular-signature-pad/tree/master/projects/demo)
 
 ## Usage example
 
 API is identical to [szimek/signature_pad](https://www.npmjs.com/package/signature_pad).
 
 Options are as per [szimek/signature_pad](https://www.npmjs.com/package/signature_pad) with the following additions:
+
 * canvasWidth: width of the canvas (px)
 * canvasHeight: height of the canvas (px)
-  The above options are provided to avoid accessing the DOM directly from your component to adjust the canvas size.
+
+The above options are provided to avoid accessing the DOM directly from your component to adjust the canvas size.
 
 ```typescript
 

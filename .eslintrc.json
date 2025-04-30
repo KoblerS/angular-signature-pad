@@ -10,8 +10,7 @@
       ],
       "parserOptions": {
         "project": [
-          "tsconfig.json",
-          "e2e/tsconfig.json"
+          "tsconfig.json"
         ],
         "createDefaultProgram": true
       },
@@ -21,20 +20,24 @@
       ],
       "rules": {
         "no-underscore-dangle": "off",
-        "semi": ["error", "always"],
-        "no-console": ["error", { "allow": ["log","warn", "error"] }],
+        "semi": [
+          "error",
+          "always"
+        ],
+        "no-console": [
+          "error",
+          {
+            "allow": [
+              "log",
+              "warn",
+              "error"
+            ]
+          }
+        ],
         "@typescript-eslint/explicit-member-accessibility": [
           "off",
           {
             "accessibility": "explicit"
-          }
-        ],
-        "@typescript-eslint/naming-convention": [
-          "error",
-          {
-            "selector": "variable",
-            "format": ["camelCase", "UPPER_CASE", "PascalCase"],
-            "leadingUnderscore": "allow"
           }
         ],
         "@angular-eslint/component-selector": "off",
@@ -46,7 +49,6 @@
           "off",
           "always"
         ],
-        "import/order": "off",
         "max-len": [
           "error",
           {
